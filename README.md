@@ -121,6 +121,6 @@ In conclusion, in the EDA process, it didn't come as a surprise that customer sa
 Using the each feature coefficients showed us that customers who are in contracts are less likely to churn as well as customers who are happy enough with the company and are willing to refer a friend could mean that they are less likely to churn.
 
 # Future Recommendations 
-* a
-* b
-* c
+* Customer satisfaction is a key element in customer retention. Customers are less forgiving when it comes to customer service therefore asking for feedback could hep improve customer retention. This could also be added to a customer's file and use NLP to add more predicting values.
+* Use feature coefficients calculate churn risk, with this feature the company can set up a discount strategy for customers who may churn.
+* It shows that contracts could maintain customer retention, the company can help providing more cheaper contracts that could lower the customers who have Month-to-Month contracs.
