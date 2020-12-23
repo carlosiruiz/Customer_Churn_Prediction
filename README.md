@@ -4,63 +4,34 @@
 
 
 #### Sources:
-[IBM Buisness Analysis Database.](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)
+[IBM Business Analysis Database.](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)
+
+[IFC, International Finance Corporation.](https://www.ifc.org/wps/wcm/connect/1d490aec-4d57-4cbf-82b3-d6842eecd9b2/IFC-Covid19-Telecommunications_final_web_2.pdf?MOD=AJPERES&CVID=n9nxogP)
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1sbrrnp-03OZq6gC47VAPRnK9-BAJgguWWhO5KQsPq78/edit?usp=sharing)
 
-#### File Index:
-* #### EDA & Modeling Folder
-  - This folder encapsulates all the notebooks that were used for EDA, Modeling and Visualizations. This folder also contains all the data files that were gathered from IBM as well as Fucntions.py file that contains all the written functions that were used in the modeling.
-* #### Images Folder
-  - This folder contains all the visualizations made that were used in the final presentation and this readme.
-* #### Main Notebook.ipyb
-  - This is the notebook where the most important components of EDA, Visualizations and Modeling is compiled.
-* #### ReadMe
 
-
-## Introduction
+## Summary
 
 ## Business Case
 
-In this trying times, now more than ever, retaining a customer base for a telecommuncations company and maintaining revenue it is of importance. The goal of this project is to help telecomunications companies predict customer churn and maintain revenue. 
-With this goal, Telecom Custommer Churn Data was collected from IBM Business Analytics, with data of 7045 customers, all based in California. This data is from the third quarter of the year and contain features such as Churn Reason, Revenue, Total Charges, Type of Contract and more. 
+Covid-19 has brought challenges and complications to the telecommunications industry. Large corporations, small business and households depend on telecom companies to operate their daily tasks. According to [IEE Communication Society,](https://techblog.comsoc.org/2020/08/27/covid-19-challenges-faced-by-telcos-and-impact-on-the-telecom-sector/)"The unprecedented global health emergency is taxing networks and platforms to the limit, with some operators and platforms reporting demand spikes as high as 800%.”
 
-To help in this business case, the following libraries were used:
+In the face of the uncertain future, customers are trying to strike a balance between expanding to meet higher demand in the short-term and preserving cash to weather a protracted economic downturn. The [IFC, International Financial Corporation](https://www.ifc.org/wps/wcm/connect/1d490aec-4d57-4cbf-82b3-d6842eecd9b2/IFC-Covid19-Telecommunications_final_web_2.pdf?MOD=AJPERES&CVID=n9nxogP) studies found that lower-income customer groups, who are experiencing the most damage, are expected to reduce or stop purchasing airtime and data bundles. 
 
-```
-### Data Manipulation
-Pandas
-Numpy
+With this in mind, Data Science can help mitigate the worries of this Telecommunication Company by focusing on the customer churn. Customer churn occurs when your customer or subscriber stops using your product or service within a specific time period. By creating prediction models that can mitigate customer churn, the company can focus resources and funding into maintaining its infrastructure. Since IFC states: "Infrastructure operators such as tower companies and energy service companies (ESCOs) may see a drop in new contracts."
 
-### Data Visualization
-Pandas
-Matplotplib.pyplot
-Seaborn
-
-### Data Modeling
-ScikitLearn
-
-### Models Used
-KNN
-Logistic Regression
-Random Forest
-GridSearch
-PCA
-
-### Scoring
-Accuracy 
-F1
-```
+The model that was implemented to help with the customer churn rate was able to accurately predict a customer will churn 97% of the time. 
 
 
 
 ## Data Collection
 
-The data that was utilized is the Telco customer churn database from IBM Business Analytics. 
+The data that was utilized is the Telco customer churn database from [IBM Business Analytics.](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)
 
 The Telco customer churn data contains information about a fictional telco company that provided home phone and Internet services to 7043 customers in California in Q3. It indicates which customers have left, stayed, or signed up for their service. Multiple important demographics are included for each customer, as well as a Satisfaction Score, Churn Score, and Customer Lifetime Value (CLTV) index.
 
-## EDA
+## Exploratiory Data Analysis
 Fist I started by looking at my target variable. I wanted to see what was the amount of customers that have churned and those who have not, or people who left the company and those who stayed. I wanted to see what was the class imbalance in the target variable. 
 
 <img src="Images/Target.png" alt="Class Distribution">
