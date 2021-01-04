@@ -21,7 +21,7 @@ In the face of the uncertain future, customers are trying to strike a balance be
 
 With this in mind, Data Science can help mitigate the worries of this Telecommunication Company by focusing on the customer churn. Customer churn occurs when your customer or subscriber stops using your product or service within a specific time period. By creating prediction models that can mitigate customer churn, the company can focus resources and funding into maintaining its infrastructure. Since IFC states: "Infrastructure operators such as tower companies and energy service companies (ESCOs) may see a drop in new contracts."
 
-The model that was implemented to help with the customer churn rate was able to accurately predict a customer will churn 97% of the time. 
+The model that was implemented to help with the customer churn rate was able to accurately predict a customer will churn 95% of the time. 
 
 
 
