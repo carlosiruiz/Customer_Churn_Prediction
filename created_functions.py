@@ -58,8 +58,49 @@ def reason_cleanup(column, df):
                 reason.append(key)
     return reason
 
+
+# This function creates percentages of a column provided.
+
+def percentage_col(df,column,string=False, churn= False):
+    """
+    This function takes in a dataframe, column and returns the percentage of each row respective to its churn value.
+    If the column's percentage is not based on its churned value it will just calculate the percent per column.
+    If the column is based on its churn value it will calculate the percentage per churn value. This will also turn
+    the column from binary to Yes or No.
+    """
+    if churn== True:
+        values=[]
+        for i in df.index:
+            if df.churn_value[i]==1:
+
+                summ=df[df.churn_value==1][column].sum()
+                values.append(round((df[column][i] * 100)/summ,2))
+
+            else:
+
+                summ=df[df.churn_value==0][column].sum()
+                values.append(round((df[column][i] * 100)/summ,2))
+    else:
+        values=[]
+        for i in df.index:
+            summ=df[column].sum()
+            values.append(round((df[column][i] * 100)/summ,2))      
+
+                
+    if string== True:        
+        for i in df.index:  
+            if df.churn_value[i]==1:
+                df.churn_value[i]= "Yes"
+            else:
+                df.churn_value[i]= "No"
+    return values
+
+
+
+
+
 #this function was created to visualize scores and create a dataframe with each score.
-def scoring(preds , model_name: str,model, cv=10, xtrain=X_train):
+def scoring(preds ,model, xtrain,y_train,y_test,model_name: str,cv):
     from sklearn.model_selection import cross_val_score
     """
     The function statrts by returning the training scores of the model then, it takes in predictions of the
@@ -142,8 +183,6 @@ def scoring(preds , model_name: str,model, cv=10, xtrain=X_train):
             scores_df.drop(scores_df.index[i], inplace=True) 
             scores_df=scores_df.append({'Name':model_name, "Accuracy":vars()[model_name+"_acc"] , "Recall": vars()[model_name+"_recc"],"F1":vars()[model_name+"_f1"],"CV Min":scores.min() ,"CV Max":scores.max(),"CV Mean":scores.mean(), "CV Range": (scores.max() - scores.min())}, ignore_index=True)
     
-
-
 
 
 
