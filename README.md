@@ -145,6 +145,6 @@ In the end, the company could explore in providing affordable One Year contracts
 By also using this model and focus on the coefficients of the features, we could create a system that could alert if a customer has a higher chance of churn and the company can focus offers to increase retention rate.
 
 # Future Recommendations 
-* Customer satisfaction is a key element in customer retention. Customers are less forgiving when it comes to customer service therefore asking for feedback could hep improve customer retention. This could also be added to a customer's file and use NLP to add more predicting values.
 * Use feature coefficients calculate churn risk, with this feature the company can set up a discount strategy for customers who may churn.
-* It shows that contracts could maintain customer retention, the company can help providing more cheaper contracts that could lower the customers who have Month-to-Month contracs.
+* The EDA shows that contracts could maintain customer retention, the company can help providing more cheaper contracts that could lower the customers who have Month-to-Month contracs.
+* Pricing could be a great influencing factor for customer churn. By increasing variablility in pricing and services, the churn rate for customers could improve.
