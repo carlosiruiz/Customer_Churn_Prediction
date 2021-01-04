@@ -41,7 +41,7 @@ Some interesting features to note:
 * *Tenure Months*: Indicates the total amount of months that the customer has been with the company by the end of the quarter specified above.
 * *Customer Status*: Indicates the status of the customer at the end of the quarter: Churned, Stayed, or Joined
 
-## Exploratiory Data Analysis
+## Exploratory Data Analysis
 Fist I started by looking at my target variable. I wanted to see what was the amount of customers that have churned and those who have not, or people who left the company and those who stayed. I wanted to see what was the difference in percentage of each category to get a sense of how large is the percentage of customer loss for this company.
 
 <img src="Images/Target.png" alt="Class Distribution">
@@ -109,7 +109,7 @@ Using Accuracy score as the main scoring metric, Recall since we want to minimiz
 ```
 
 ### Final Model
-The final model was created using gridsearch for tunning using Gradient Boost as baseline model.
+The final model was created using GridSearch for tuning using Gradient Boost as baseline model.
 ```
 Gradient Boost with GridSearch Final Scores:
 * Accuracy: 0.956
@@ -146,5 +146,5 @@ By also using this model and focus on the coefficients of the features, we could
 
 # Future Recommendations 
 * Use feature coefficients calculate churn risk, with this feature the company can set up a discount strategy for customers who may churn.
-* The EDA shows that contracts could maintain customer retention, the company can help providing more cheaper contracts that could lower the customers who have Month-to-Month contracs.
-* Pricing could be a great influencing factor for customer churn. By increasing variablility in pricing and services, the churn rate for customers could improve.
+* The EDA shows that contracts could maintain customer retention, the company can help providing more cheaper contracts that could lower the customers who have Month-to-Month contracts.
+* Pricing could be a great influencing factor for customer churn. By increasing variability in pricing and services, the churn rate for customers could improve.
